@@ -3,21 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { MyProfileComponent } from './my-profile/my-profile.component';
+import { AdminModule } from './admin/admin.module';
+import { ProjectComponent } from './admin/project/project.component';
+import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AboutComponent,
-    DashboardComponent,
-    MyProfileComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [ AppComponent ],
+  imports: [BrowserModule, AppRoutingModule, AdminModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })
