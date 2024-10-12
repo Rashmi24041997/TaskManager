@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+*.dll
+*.vsidx
+/TaskManagerMVC/MVCTaskManager/bin
+/TaskManagerMVC/MVCTaskManager/obj
+/TaskManagerMVC/.vs
+/TaskManagerMVC/TaskManagerApi/bin
+/TaskManagerMVC/TaskManagerApi/obj
